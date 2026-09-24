@@ -1,11 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/Logo.jpeg" alt="Logo Hygeonix" class="custom-logo">
+            <span class="logo-fallback-text">Hygeonix</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#productos">Productos y Servicios</a></li>
+                <li><a href="#casos-exito">Casos de Éxito</a></li>
+                <li><a href="#contacto" class="btn-nav">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-badge">Proyecto Aula 2026</div>
+            <h1>Hygeonix</h1>
+            <p class="slogan">"Donde las ideas se vuelven un código"</p>
+            <p class="hero-desc">Desarrollamos soluciones tecnológicas accesibles e intuitivas de alto impacto social garantizando utilidades reales.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Contáctanos</a>
+                <a href="#quienes-somos" class="btn-secondary">Conócenos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="quienes-somos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quiénes Somos</h2>
+                <p>Talento humano que compone Hygeonix.</p>
+            </div>
+            
+            <div class="mission-vision-grid">
+                <div class="mv-card">
+                    <h3>Misión</h3>
+                    <p>Desarrollar soluciones tecnológicas accesibles e intuitivas de alto impacto social garantizando utilidades reales a necesidades de la población de la CDMX.</p>
+                </div>
+                <div class="mv-card">
+                    <h3>Visión</h3>
+                    <p>Concluir nuestro último año de preparatoria entregando un proyecto de software funcional, estable y bien estructurado, que demuestre lo aprendido y resuelva de manera práctica una necesidad real en nuestro entorno.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Nuestro Equipo</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img-placeholder">
+                        <img src="./img/Persona.png" alt="Líder" class="team-photo">
+                    </div>
+                    <h4>Líder</h4>
+                    <p>Hernández Malagón Gael</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-img-placeholder">
+                        <img src="./img/Persona.png" alt="Desarrollador" class="team-photo">
+                    </div>
+                    <h4>Desarrollador</h4>
+                    <p>Cruz Terrero Marlon Cristo</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-img-placeholder">
+                        <img src="./img/Persona.png" alt="Diseñador" class="team-photo">
+                    </div>
+                    <h4>Diseñador</h4>
+                    <p>Cruz Fuentes Mónica</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-img-placeholder">
+                        <img src="./img/Persona.png" alt="Analista" class="team-photo">
+                    </div>
+                    <h4>Analista</h4>
+                    <p>García Gonzalez Luis David</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Productos y Servicios</h2>
+            </div>
+            
+            <div class="product-single-wrapper">
+                <div class="product-main-card">
+                    <div class="product-img-placeholder">
+                        <img src="producto.jpg" alt="Proyecto y Servicios" class="product-photo"> <!--Aqui debe de ir el logo de la nueva aplicacion-->
+                    </div>
+                    <div class="product-content">
+                        <h3>Aqui debe de ir el nommbre de la aplicacion</h3>
+                        <div class="objective-box">
+                            <strong>Objetivo:</strong> 
+                            <p>aqui debe de ir el nuevo objetivo</p>
+                        </div>
+                        <ul class="service-list">
+                            <li>Aqui debe de ir alguna funcion del nuevo proyecto</li>
+                            <li>Aqui debe de ir alguna funcion del nuevo proyecto</li>
+                            <li>Aqui debe de ir alguna funcion del nuevo proyecto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="casos-exito" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Caso de Éxito</h2>
+                <p>Proyecto desarrollado y validado durante el semestre pasado en laboratorio de software.</p>
+            </div>
+            
+            <div class="cases-grid single-case">
+                <div class="case-card">
+                    <div class="case-img-placeholder">
+                        <img src="./img/logoRentControl.jpeg" alt="Caso de Éxito" class="case-photo">
+                    </div>
+                    <span class="case-tag">Semestre Pasado</span>
+                    <h3>Gestión de Inmuebles en Renta</h3>
+                    <p><strong>Objetivo:</strong> Desarrollar una aplicación de escritorio con interfaz web para la gestión de inmuebles en renta, dirigido a arrendadores y arrendatarios en la Zona Metropolitana, que ayude al control y seguimiento de comprobantes de pago y la gestión de reportes de incidencias de mantenimiento, con el fin de reducir los conflictos derivados de la falta de información y mejorar la administración de la propiedad.</p>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="RentControl.zip" download class="btn-primary">Descargar Proyecto en ZIP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-white">Contáctanos</h2>
+                <p class="text-light">¿Tienes alguna duda o propuesta? Envíanos los detalles de tu petición.</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <label for="nombre">Tu Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="correo">Tu Correo Electrónico</label>
+                        <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="mensaje">Tu Mensaje o Petición</label>
+                        <textarea id="mensaje" rows="4" placeholder="Escribe aquí los detalles de tu petición..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Enviar Petición</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>2026 Hygeonix. Proyecto Aula - CDMX.</p>
+    </footer>
+
 </body>
 </html>
